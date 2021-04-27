@@ -5,7 +5,7 @@ import cors from 'cors';
 const app = express();
 
 dotenv.config();
-console.log(`Your app url is ${process.env.APP_URL}`); // 8626
+console.log(`.env configurado ${process.env.APP_URL}`); // 8626
 
 // define que a comunicacao do express sera por defaul json
 app.use(express.json()); 
