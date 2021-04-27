@@ -13,5 +13,7 @@ app.use(cors());
 
 app.get("/teste", (req, res) => {res.json({mensagem: "A api está rodando!"})})
 
-// manda o express escutar a porta 3333
-app.listen(3000, () => {console.log("Server is running on port 5000")});
+// manda o express escutar a porta 5000
+const port = process.env.PORT || 5000
+
+app.listen(port, () => {console.log(`sua aplicação está rodando na porta: ${port}`)});
